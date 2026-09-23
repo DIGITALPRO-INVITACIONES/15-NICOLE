@@ -1,0 +1,7 @@
+MODELO COQUETTE — NICOLE FERNANDA TORDOYA IBARRA
+Incluye apertura animada de sobre con lazo, música A Thousand Years al tocar, ilustración de rosas y satén, detalles de Zen Garden, horario 13:00 a 22:30, mapa y animaciones suaves.
+La fecha aún no fue proporcionada. El modelo indica que se anunciará pronto; no contiene calendario ni cuenta regresiva con datos inventados. No se añadió confirmación de asistencia porque aún no se proporcionó contacto.
+PUBLICAR: descomprime y sube TODOS los archivos de esta carpeta al mismo nivel del repositorio de GitHub Pages. Conserva los nombres. No subas solamente index.html.
+QR PARA LAS MANILLAS: debe apuntar al enlace público final de la invitación, nunca a localhost ni al archivo ZIP. Una vez publicado y elegido el enlace definitivo, se podrá preparar el QR imprimible. Las actualizaciones del sitio conservan el mismo QR mientras no cambie la dirección.
+Música: empieza después de tocar Abrir. El botón inferior permite pausar/reintentar. Algunos navegadores pueden limitar el sonido.
+La animación respeta la preferencia de reducir movimiento del dispositivo.
