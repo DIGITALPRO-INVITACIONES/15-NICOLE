@@ -6,7 +6,13 @@ audio.addEventListener('play',musicState);audio.addEventListener('pause',musicSt
 function effectState(){document.body.classList.toggle('effects-off',!effects);byId('effects-button').setAttribute('aria-pressed',String(effects));byId('effects-button').setAttribute('aria-label',effects?'Pausar brillitos':'Activar brillitos');byId('effects-button').innerHTML=effects?'✧ <span>Brillitos</span>':'✧ <span>Activar</span>'}
 effectState();byId('effects-button').addEventListener('click',()=>{effects=!effects;effectState()});
 byId('open').addEventListener('click',()=>{byId('open').disabled=true;audio.volume=.6;audio.play().catch(musicState);byId('cover').classList.add('opening');setTimeout(()=>{byId('cover').hidden=true;byId('invitation').hidden=false;control.hidden=false;byId('effects-button').hidden=false;document.body.classList.remove('sealed');window.scrollTo(0,0);document.querySelector('.hero h2').focus({preventScroll:true});if(!reduced.matches&&'IntersectionObserver' in window){const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>{el.classList.add('reveal-ready');observer.observe(el)})}},reduced.matches?0:2150)});
-for(let i=0;i<44;i++){const el=document.createElement('span');el.className=i<20?'sparkle':'glint';el.textContent=i%7===0?'♡':'✧';el.style.cssText=`--left:${(i*29+4)%100}%;--top:${(i*17+9)%100}%;--duration:${i<20?19+i%8:3+i%5}s;--delay:${-i*.8}s;--size:${9+i%4*4}px`;byId('particles').append(el)}
+for(let i=0;i<78;i++){
+ const el=document.createElement('span'),heart=i<32;
+ el.className=heart?'falling-heart':'appearing-glint';
+ el.textContent=heart?(i%3===0?'♡':'♥'):(i%3===0?'✧':'✦');
+ el.style.cssText=`--left:${(i*37+3)%100}%;--top:${(i*23+7)%100}%;--duration:${heart?11+i%11:2.4+(i%8)*.43}s;--delay:${-i*1.37}s;--size:${heart?12+i%5*3:13+i%6*4}px;--sway:${i%2===0?45:-45}px;--tilt:${i%2===0?35:-35}deg`;
+ byId('particles').append(el);
+}
 document.addEventListener('visibilitychange',()=>byId('particles').classList.toggle('paused',document.hidden));
 byId('back-top').addEventListener('click',()=>window.scrollTo({top:0,behavior:reduced.matches?'instant':'smooth'}));
 function countdown(){const diff=new Date('2026-10-24T13:00:00-04:00')-Date.now();if(diff<=0){byId('countdown').textContent='¡Llegó el día de celebrar!';return}const values=[Math.floor(diff/86400000),Math.floor(diff/3600000)%24,Math.floor(diff/60000)%60,Math.floor(diff/1000)%60];byId('countdown').innerHTML=values.map((n,i)=>`<div><strong>${String(n).padStart(2,'0')}</strong><span>${['DÍAS','HORAS','MINUTOS','SEGUNDOS'][i]}</span></div>`).join('')}
