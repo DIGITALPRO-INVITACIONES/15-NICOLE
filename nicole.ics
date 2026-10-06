@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Digital Pro//Nicole XV//ES
+BEGIN:VEVENT
+UID:nicole-xv-20261024@digitalpro
+DTSTAMP:20261005T120000Z
+DTSTART:20261024T170000Z
+DTEND:20261025T020000Z
+SUMMARY:Mis XV - Nicole Fernanda
+LOCATION:Zen Garden
+DESCRIPTION:No olvides tu traje de baño. Ubicación: https://maps.app.goo.gl/KCoiEmfTmPsxknyHA
+END:VEVENT
+END:VCALENDAR
