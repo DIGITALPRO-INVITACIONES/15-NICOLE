@@ -35,3 +35,6 @@ body{background:#faf8f3}.cover{background:radial-gradient(ellipse at 50% 32%,#ff
 .memory{background:#f0ebe3}footer{background:repeating-linear-gradient(90deg,#ded6ca 0,#ded6ca 20px,#f0ebe2 20px,#f0ebe2 40px)}
 .button,.action-open{background:linear-gradient(130deg,#987844,#72542e);color:#fffdf8;border-color:#a48959}.music,.effects-button{background:#faf6ec;color:#735832;border-color:#b79865}
 .falling-heart{color:#b99a65}.parents-names,.pool-reminder{background:#fffdf6ed}.appearing-glint{color:#fffbed;text-shadow:0 0 3px #fff,0 0 7px #c49b52,0 0 14px #ecd8ad}
+
+/* Piscina primero; cóctel después. */
+.dress-moments{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:850px;margin:36px auto 0;position:relative}.dress-moment{background:#fffdf5e8;border:1px solid #b7986570;border-radius:100px 100px 24px 24px;padding:28px 24px}.dress-moment .dress-medallion{width:165px;margin:0 auto 12px}.dress-moment .moment-order{font:600 10px/1.6 Arial;letter-spacing:.15em;color:#735832;margin:12px 0 16px}.dress-moment h3{font:34px/1.25 Coquette,Georgia,serif;color:#856438;margin:0 0 16px}.dress-moment p:last-child{font-size:16px;line-height:1.8;margin:0}.dress-moment strong{color:#735832}@media(max-width:700px){.dress-moments{grid-template-columns:1fr;max-width:390px}.dress-moment{padding:26px 22px}.dress-moment h3{font-size:32px}}
